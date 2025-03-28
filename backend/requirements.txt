@@ -17,7 +17,7 @@ psycopg[binary]  # For PostgreSQL
 aiosqlite==0.19.0  # For SQLite
 
 # AI & ML
-torch==2.0.1  # PyTorch for model inference
+torch>=2.0.1,<2.7  # PyTorch for model inference
 torchaudio==2.0.2  # For audio processing
 transformers==4.30.2  # For Hugging Face transformers
 nltk==3.8.1  # Natural language processing
@@ -27,7 +27,7 @@ scikit-learn==1.3.0  # Machine learning utilities
 
 # Audio Processing
 librosa==0.10.0.post2  # Audio processing
-soundfile==0.12.1  # Audio file reading
+soundfile>=0.10.2,<=0.12  # Audio file reading
 pyannote.audio==2.1.1  # Speaker diarization
 
 # Storage & Caching
