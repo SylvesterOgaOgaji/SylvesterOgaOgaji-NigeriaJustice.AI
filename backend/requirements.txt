@@ -1,0 +1,58 @@
+# API Framework
+fastapi==0.100.0
+uvicorn[standard]==0.22.0
+pydantic==2.0.2
+python-multipart==0.0.6
+email-validator==2.0.0
+starlette==0.27.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+pyjwt==2.8.0
+
+# Database
+sqlalchemy==2.0.19
+alembic==1.11.1
+psycopg2-binary==2.9.6  # For PostgreSQL
+aiosqlite==0.19.0  # For SQLite
+
+# AI & ML
+torch==2.0.1  # PyTorch for model inference
+torchaudio==2.0.2  # For audio processing
+transformers==4.30.2  # For Hugging Face transformers
+nltk==3.8.1  # Natural language processing
+spacy==3.6.0  # Advanced NLP
+python-Levenshtein==0.21.1  # String similarity
+scikit-learn==1.3.0  # Machine learning utilities
+
+# Audio Processing
+librosa==0.10.0.post2  # Audio processing
+soundfile==0.12.1  # Audio file reading
+pyannote.audio==2.1.1  # Speaker diarization
+
+# Storage & Caching
+redis==4.6.0
+aiofiles==23.1.0  # Async file operations
+
+# Utilities
+python-dotenv==1.0.0  # Environment variable management
+loguru==0.7.0  # Better logging
+tenacity==8.2.2  # Retry mechanisms
+httpx==0.24.1  # Async HTTP client
+typer==0.9.0  # CLI utilities
+rich==13.4.2  # Rich text formatting
+pydub==0.25.1  # Audio manipulation
+python-magic==0.4.27  # File type detection
+
+# Testing
+pytest==7.4.0
+pytest-asyncio==0.21.1
+httpx==0.24.1
+pytest-cov==4.1.0
+
+# Development
+black==23.7.0
+isort==5.12.0
+flake8==6.0.0
+mypy==1.4.1
