@@ -22,5 +22,3 @@ jobs:
         run: |
           docker compose build
           docker compose run backend pytest
-      
-      # Add deployment steps based on your hosting environment
