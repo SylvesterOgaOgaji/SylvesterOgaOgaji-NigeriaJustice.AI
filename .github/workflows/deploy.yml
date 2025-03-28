@@ -1,20 +1,53 @@
+
 name: Deploy
 
 on:
+
   push:
+
     branches: [ main ]
+
     tags:
+
       - 'v*'
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
-    - name: Build Docker images
-      run: |
-        docker-compose build
-    - name: Run tests in containers
-      run: |
-        docker-compose run backend pytest
-    # Add deployment steps based on your hosting environment
+
+      - uses: actions/checkout@v3
+
+      
+
+      - name: Set up Docker Buildx
+
+        uses: docker/setup-buildx-action@v2
+
+      
+
+      - name: Set up Docker Compose
+
+        run: |
+
+          sudo apt-get update
+
+          sudo apt-get install -y docker-compose-plugin
+
+          docker compose version
+
+      
+
+      - name: Build Docker images
+
+        run: |
+
+          docker compose build
+
+      
+
+      # Add deployment steps based on your hosting environment
+
