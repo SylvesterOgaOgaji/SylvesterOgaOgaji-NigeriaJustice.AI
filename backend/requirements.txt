@@ -1,7 +1,7 @@
 # API Framework
 fastapi==0.100.0
 uvicorn[standard]==0.22.0
-pydantic==2.0.2
+pydantic==1.10.7
 python-multipart==0.0.6
 email-validator==2.0.0
 starlette==0.27.0
@@ -10,7 +10,6 @@ starlette==0.27.0
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 pyjwt==2.8.0
-
 # Database
 sqlalchemy==2.0.19
 alembic==1.11.1
