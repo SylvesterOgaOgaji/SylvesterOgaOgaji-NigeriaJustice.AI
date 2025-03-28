@@ -1,0 +1,20 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build Docker images
+      run: |
+        docker-compose build
+    - name: Run tests in containers
+      run: |
+        docker-compose run backend pytest
+    # Add deployment steps based on your hosting environment
